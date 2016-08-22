@@ -1945,6 +1945,22 @@ body:not(.post-template) .post-title {
     font-size: 1em !important;
     text-align: center;
     }
+    .read-next-p{
+        display: none !important;
+    }
+    .post-header {
+    margin-bottom: 30px !important;
+    margin-top: 80px !important;
+    }
+
+    .post-header h1.post-title {
+    line-height: 1 !important;
+    font-size: 30px !important;
+    }
+
+    .post-content {
+    min-height: 390px;
+    }
 
     .shot-container:after, .shot-container:before {
     display: block;
