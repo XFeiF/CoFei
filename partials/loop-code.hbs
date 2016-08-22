@@ -1,0 +1,54 @@
+{{!-- Previous/next page links - only displayed on page 2+ --}}
+<div class="extra-pagination inner">
+    {{pagination}}
+</div>
+
+{{!-- This is the post loop - each post will be output using this markup --}}
+
+<div class="ui two  column grid">
+    <div class="column">
+        <div class="ui segment">
+            {{#foreach posts}}
+            {{#if @odd}}
+            <div id="post-card">
+                        <a class="post_container" href="{{url}}" >
+                            <header class="post-header">
+                                <h2 class="post-title">{{title}}</h2>
+                            </header>
+                            <section class="post-excerpt">
+                                <time id="post-time" class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+                                <p id="post-p">{{excerpt characters="12"}}</p>
+                            </section>
+                        </a>
+            </div>
+            {{/if}}
+            {{/foreach}}
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="ui segment">
+            {{#foreach posts}}
+            {{#if @even}}
+            <div id="post-card">
+                        <a class="post_container" href="{{url}}" >
+                            <header class="post-header">
+                                <h2 class="post-title">{{title}}</h2>
+                            </header>
+                            <section class="post-excerpt code">
+                                <time id="post-time" class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time>
+                                <p id="post-p">{{excerpt characters="12"}} </p>
+                            </section>
+                        </a>
+            </div>
+            {{/if}}
+            {{/foreach}}
+        </div>
+    </div>
+</div>
+
+
+
+
+{{!-- Previous/next page links - displayed on every page --}}
+{{pagination}}

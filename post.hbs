@@ -1,0 +1,54 @@
+{{!< default}}
+
+{{!-- The comment above "< default" means - insert everything in this file into
+    the {{{body}}} of the default.hbs template, containing the blog header/footer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+<div class="post_wraper" style="background-color:#fff;height:100%;width:100%">
+
+<header >
+            <a class="back-btn" href="/#content">
+              <i class="camera retro icon"></i>
+            </a>
+</header>
+
+<main class="content" role="main" >
+    <article class="{{post_class}}">
+
+        <header class="post-header">
+            <h1 class="post-title">{{title}}</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" ∞ "}}
+            </section>
+        </header>
+
+        <section class="post-content" id="te">
+            {{content}}
+        </section>
+    </article>
+
+
+</main>
+<a id="returnTop" style="bottom:15px">
+    <i class="rocket icon"></i>
+</a>
+{{!-- Links to Previous/Next posts --}}
+<aside class="read-next">
+    {{#next_post}}
+    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+        <section class="post">
+            <h2>{{title}}</h2>
+        </section>
+    </a>
+    {{/next_post}}
+    {{#prev_post}}
+    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+        <section class="post">
+            <h2>{{title}}</h2>
+        </section>
+    </a>
+    {{/prev_post}}
+</aside>
+</div>
+{{/post}}
