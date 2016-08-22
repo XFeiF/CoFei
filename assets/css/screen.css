@@ -17,11 +17,11 @@
     9.  Pagination
     10. Subscribe
     11. Footer
+    11.5  nice_shot
+    11.6 tag-code tag-fragment
     12. Media Queries (Tablet)
     13. Media Queries (Mobile)
     14. Animations
-    15. nice_shot
-    16. tag-code tag-fragment
 */
 
 
@@ -1764,504 +1764,7 @@ body:not(.post-template) .post-title {
 }
 
 /* ==========================================================================
-   12. Media Queries - Smaller than 900px
-   ========================================================================== */
-
-@media only screen and (max-width: 900px) {
-    blockquote {
-        margin-left: 0;
-    }
-    .main-header {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        height: auto;
-        min-height: 240px;
-        height: 60vh;
-        padding: 15% 0;
-    }
-    .scroll-down, .home-template .main-header:after {
-        display: none;
-    }
-    .archive-template .main-header {
-        min-height: 180px;
-        padding: 10% 0;
-    }
-    .blog-logo img {
-        padding: 4px 0;
-    }
-    .page-title {
-        font-size: 4rem;
-        letter-spacing: -1px;
-    }
-    .page-description {
-        font-size: 1.8rem;
-        line-height: 1.5em;
-    }
-    .post {
-        font-size: 0.95em
-    }
-    body:not(.post-template) .post-title {
-        font-size: 3.2rem;
-    }
-    hr {
-        margin: 2.4em 0;
-    }
-    ol, ul {
-        padding-left: 2em;
-    }
-    h1 {
-        font-size: 4.5rem;
-        text-indent: -2px;
-    }
-    h2 {
-        font-size: 3.6rem;
-    }
-    h3 {
-        font-size: 3.1rem;
-    }
-    h4 {
-        font-size: 2.5rem;
-    }
-    h5 {
-        font-size: 2.2rem;
-    }
-    h6 {
-        font-size: 1.8rem;
-    }
-    .author-profile {
-        padding-bottom: 4rem;
-    }
-    .author-profile .author-bio {
-        font-size: 1.6rem;
-    }
-    .author-meta span {
-        display: block;
-        margin: 1.5rem 0;
-    }
-    .author-profile .author-meta span {
-        font-size: 1.6rem;
-    }
-    .post-head.main-header {
-        height: 45vh;
-    }
-    .tag-head.main-header, .author-head.main-header {
-        height: 30vh;
-    }
-    .no-cover.post-head.main-header {
-        height: 55px;
-        padding: 0;
-    }
-    .no-cover.author-head.main-header {
-        padding: 0;
-    }
-    .gh-subscribe {
-        padding: 2rem;
-    }
-    .gh-subscribe-title {
-        font-size: 2rem
-    }
-    .gh-subscribe p {
-        font-size: 1.4rem;
-    }
-    .read-next {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        margin-top: 4rem;
-    }
-    .read-next p {
-        display: none;
-    }
-    .read-next-story.no-cover+ .read-next-story.no-cover {
-        border-top: rgba(0, 0, 100, 0.06) 1px solid;
-        border-left: none;
-    }
-}
-
-/* ==========================================================================
-   13. Media Queries - Smaller than 500px
-   ========================================================================== */
-
-@media only screen and (max-width: 500px) {
-
-    iframe{
-        position: fixed;
-        right: 15%;
-        bottom: 10px;
-        width: 70%;
-        margin: 0 auto;
-    }
-    .main-header {
-        margin-bottom: 15px;
-        height: 40vh;
-        display: none;
-    }
-    .no-cover.main-header {
-        height: 30vh;
-    }
-    .archive-template .main-header {
-        max-height: 20vh;
-        min-height: 160px;
-        padding: 10% 0;
-    }
-    .main-nav {
-        padding: 5px;
-        margin-bottom: 2rem;
-    }
-    .site-wrapper{
-        width: 100% !important;
-        height: 100% !important;
-        background-color: #FFF;
-    }
-    #content{
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-color: #FFF;
-    }
-
-    .shot-container {
-    position: relative;
-    width: 100%;
-    height: 70% !important;
-    padding-bottom: 0 !important;
-    background: center no-repeat fixed #FFF;
-    background-size: cover;
-    }
-    .shot-svg {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%,-50%) scale(.9);
-    transform: translate(-50%,-50%) scale(.9);
-    width: 350px;
-    height: 350px;
-    }
-    .shot-container:before {
-    content: '「 Life is a journey. Nice to Meet U 」';
-    position: absolute;
-    top: 50%;
-    color: #FFF;
-    font-size: 1em !important;
-    text-align: center;
-    }
-    .read-next-p{
-        display: none !important;
-    }
-    .post-header {
-    margin-bottom: 30px !important;
-    margin-top: 80px !important;
-    }
-
-    .post-header h1.post-title {
-    line-height: 1 !important;
-    font-size: 30px !important;
-    }
-
-    .post-content {
-    min-height: 390px;
-    }
-
-    .shot-container:after, .shot-container:before {
-    display: block;
-    width: 100% !important;
-    height: 100% !important;
-    opacity: 0;
-    }
-    transform:translate(-50%,-50%) scale(.55)}
-    @keyframes
-    dash{to{stroke-dashoffset:0}}
-    .shot-container:after {
-    content: '';
-    background-color: rgba(0,0,0,.55);
-    }
-
-    .ui.grid>.column:not(.row) {
-    width: 100% !important;
-    margin: 0 auto;
-    }
-
-    .info-icon i, .shot-container {
-    transition: all .5s ease-in-out;
-    }
-
-    .info-icon i, .shot-container {
-    transition: all .5s ease-in-out;
-    }
-
-    .blog-logo {
-        padding: 5px;
-    }
-    .blog-logo img {
-        height: 30px;
-    }
-    .menu-button {
-        padding: 0 5px;
-        border-radius: 0;
-        border-width: 0;
-        color: #2e2e2e;
-        background: transparent;
-    }
-    .menu-button:hover {
-        color: #2e2e2e;
-        border-color: transparent;
-        background: none;
-    }
-    body.nav-opened .menu-button {
-        background: none;
-        border: transparent;
-    }
-    .main-nav.overlay a:hover {
-        color: #fff;
-        border-color: transparent;
-        background: transparent;
-    }
-    .no-cover .main-nav.overlay {
-        background: none;
-    }
-    .no-cover .main-nav.overlay .menu-button {
-        border: none;
-    }
-    .main-nav.overlay .menu-button {
-        border-color: transparent;
-    }
-    .nav-title {
-        top: 25px;
-    }
-    .nav-close {
-        position: absolute;
-        top: 18px;
-    }
-    .nav ul {
-        padding: 60px 9% 5%;
-    }
-    .inner, .pagination {
-        width: auto;
-        margin: 2rem auto;
-    }
-    .post {
-        width: auto;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        margin-left: 16px;
-        margin-right: 16px;
-        padding-bottom: 2rem;
-        line-height: 1.65em;
-    }
-    .post-date {
-        display: none;
-    }
-    .post-template .post-header {
-        margin-bottom: 2rem;
-        width: 100%;
-        height: 25%;
-        text-align: center;
-        margin-bottom: 60px;
-
-    }
-    .post-template .post-date {
-        display: inline-block;
-    }
-    hr {
-        margin: 1.75em 0;
-    }
-    p, ul, ol, dl {
-        font-size: 0.95em;
-        margin: 0 0 2.5rem 0;
-    }
-    .page-title {
-        font-size: 3rem;
-    }
-    .post-excerpt p {
-        font-size: 0.85em;
-    }
-    .page-description {
-        font-size: 1.6rem;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        margin: 0 0 0.3em 0;
-    }
-    h1 {
-        font-size: 2.8rem;
-        letter-spacing: -1px;
-    }
-    h2 {
-        font-size: 2.4rem;
-        letter-spacing: 0;
-    }
-    h3 {
-        font-size: 2.1rem;
-    }
-    h4 {
-        font-size: 1.9rem;
-    }
-    h5 {
-        font-size: 1.8rem;
-    }
-    h6 {
-        font-size: 1.8rem;
-    }
-    body:not(.post-template) .post-title {
-        font-size: 2.5rem;
-    }
-    .post-template .site-footer {
-        margin-top: 0;
-    }
-    .post-content img {
-        padding: 0;
-        width: calc(100%+ 32px);
-        /* expand with to image + margins */
-        min-width: 0;
-        max-width: 112%;
-        /* fallback when calc doesn't work */
-    }
-    .post-meta {
-        font-size: 1.3rem;
-        margin-top: 1rem;
-    }
-    .post-footer {
-        padding: 5rem 0 3rem 0;
-        text-align: center;
-    }
-    .post-footer .author {
-        margin: 0 0 2rem 0;
-        padding: 0 0 1.6rem 0;
-        border-bottom: #EBF2F6 1px dashed;
-    }
-    .post-footer .share {
-        position: static;
-        width: auto;
-    }
-    .post-footer .share a {
-        margin: 1.4rem 0.8rem 0 0.8rem;
-    }
-    .author-meta li {
-        float: none;
-        margin: 0;
-        line-height: 1.75em;
-    }
-    .author-meta li:before {
-        display: none;
-    }
-    .older-posts, .newer-posts {
-        position: static;
-        margin: 10px 0;
-    }
-    .page-number {
-        display: block;
-    }
-    .site-footer {
-        margin-top: 3rem;
-    }
-    .author-profile {
-        padding-bottom: 2rem;
-    }
-    .post-head.main-header {
-        height: 30vh;
-    }
-    .tag-head.main-header, .author-head.main-header {
-        height: 20vh;
-    }
-    .post-footer .author-image {
-        top: -60px;
-    }
-    .author-profile .author-image {
-        margin-top: -70px;
-    }
-    .author-profile .author-meta span {
-        font-size: 1.4rem;
-    }
-    .archive-template .main-header .page-description {
-        display: none;
-    }
-    .gh-subscribe {
-        padding: 15px;
-    }
-    .gh-subscribe form {
-        margin-top: 10px;
-    }
-    .read-next {
-        margin-top: 2rem;
-        margin-bottom: -37px;
-    }
-    .read-next .post {
-        width: 100%;
-    }
-}
-
-/* ==========================================================================
-   14. Animations
-   ========================================================================== */
-
-
-/* Used to fade in title/desc on the home page */
-
-@-webkit-keyframes fade-in-down {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-@keyframes fade-in-down {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
-/* Used to bounce .scroll-down on home page */
-
-@-webkit-keyframes bounce {
-    0%, 10%, 25%, 40%, 50% {
-        -webkit-transform: translateY(0) rotate(-90deg);
-        transform: translateY(0) rotate(-90deg);
-    }
-    20% {
-        -webkit-transform: translateY(-10px) rotate(-90deg);
-        transform: translateY(-10px) rotate(-90deg);
-    }
-    30% {
-        -webkit-transform: translateY(-5px) rotate(-90deg);
-        transform: translateY(-5px) rotate(-90deg);
-    }
-}
-@keyframes bounce {
-    0%, 10%, 25%, 40%, 50% {
-        -webkit-transform: translateY(0) rotate(-90deg);
-        transform: translateY(0) rotate(-90deg);
-    }
-    20% {
-        -webkit-transform: translateY(-10px) rotate(-90deg);
-        transform: translateY(-10px) rotate(-90deg);
-    }
-    30% {
-        -webkit-transform: translateY(-5px) rotate(-90deg);
-        transform: translateY(-5px) rotate(-90deg);
-    }
-}
-
-/* ==========================================================================
-   15. nice_shot
+   11.5. nice_shot
    ========================================================================== */
 
 .shot-container:before {
@@ -2577,6 +2080,7 @@ a.post_container{
     text-align: center;
 }
 .post-content{
+    min-height: 400px;
     padding: 70px;
     border-radius: 2px;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.15);
@@ -2593,7 +2097,7 @@ a.post_container{
 }
 #post-card{
     float: left;
-    margin: 15px;
+    /*margin: 15px;*/
     padding: 20px;
     box-shadow: 0 0 8px 0 rgba(0,0,0,.25);
     transition: all .3s linear;
@@ -2734,6 +2238,525 @@ aside.read-next-p a{
     padding-top: 50px;
     color:  #6bafe7;
 }
+
+
+
+/* ==========================================================================
+   12. Media Queries - Smaller than 900px
+   ========================================================================== */
+
+@media only screen and (max-width: 900px) {
+    blockquote {
+        margin-left: 0;
+    }
+    .main-header {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: auto;
+        min-height: 240px;
+        height: 60vh;
+        padding: 15% 0;
+    }
+    .scroll-down, .home-template .main-header:after {
+        display: none;
+    }
+    .archive-template .main-header {
+        min-height: 180px;
+        padding: 10% 0;
+    }
+    .blog-logo img {
+        padding: 4px 0;
+    }
+    .page-title {
+        font-size: 4rem;
+        letter-spacing: -1px;
+    }
+    .page-description {
+        font-size: 1.8rem;
+        line-height: 1.5em;
+    }
+    .post {
+        font-size: 0.95em
+    }
+    body:not(.post-template) .post-title {
+        font-size: 3.2rem;
+    }
+    hr {
+        margin: 2.4em 0;
+    }
+    ol, ul {
+        padding-left: 2em;
+    }
+    h1 {
+        font-size: 4.5rem;
+        text-indent: -2px;
+    }
+    h2 {
+        font-size: 3.6rem;
+    }
+    h3 {
+        font-size: 3.1rem;
+    }
+    h4 {
+        font-size: 2.5rem;
+    }
+    h5 {
+        font-size: 2.2rem;
+    }
+    h6 {
+        font-size: 1.8rem;
+    }
+    .author-profile {
+        padding-bottom: 4rem;
+    }
+    .author-profile .author-bio {
+        font-size: 1.6rem;
+    }
+    .author-meta span {
+        display: block;
+        margin: 1.5rem 0;
+    }
+    .author-profile .author-meta span {
+        font-size: 1.6rem;
+    }
+    .post-head.main-header {
+        height: 45vh;
+    }
+    .tag-head.main-header, .author-head.main-header {
+        height: 30vh;
+    }
+    .no-cover.post-head.main-header {
+        height: 55px;
+        padding: 0;
+    }
+    .no-cover.author-head.main-header {
+        padding: 0;
+    }
+    .gh-subscribe {
+        padding: 2rem;
+    }
+    .gh-subscribe-title {
+        font-size: 2rem
+    }
+    .gh-subscribe p {
+        font-size: 1.4rem;
+    }
+    .read-next {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    .read-next p {
+        display: none;
+    }
+    .read-next-story.no-cover+ .read-next-story.no-cover {
+        border-top: rgba(0, 0, 100, 0.06) 1px solid;
+        border-left: none;
+    }
+}
+
+/* ==========================================================================
+   13. Media Queries - Smaller than 500px
+   ========================================================================== */
+
+@media only screen and (max-width: 500px) {
+
+    .ui.grid>.column:not(.row) {
+    width: 100%;
+    margin: 0 auto;
+    }
+
+    #content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #FFF;
+    }
+
+    .info-container {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    background-color: #000;
+    z-index: 1;
+    }
+
+    .site-wrapper{
+        width: 100% ;
+        height: 100% ;
+        background-color: #FFF;
+    }
+    iframe{
+        position: fixed;
+        right: 15%;
+        bottom: 10px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .post-meta {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+
+    .post-header h1.post-title {
+    line-height: 1 ;
+    font-size: 30px ;
+    }
+
+    .post-date {
+        /*display: none;*/
+    }
+    .main-header {
+        margin-bottom: 15px;
+        height: 40vh;
+        display: none;
+    }
+    .no-cover.main-header {
+        height: 30vh;
+    }
+    .archive-template .main-header {
+        max-height: 20vh;
+        min-height: 160px;
+        padding: 10% 0;
+    }
+    .main-nav {
+        padding: 5px;
+        margin-bottom: 2rem;
+    }
+
+
+
+    .shot-container {
+    position: relative;
+    width: 100%;
+    height: 70% ;
+    padding-bottom: 0 ;
+    background: center no-repeat fixed #FFF;
+    background-size: cover;
+    }
+    .shot-svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%) scale(.9);
+    transform: translate(-50%,-50%) scale(.9);
+    width: 350px;
+    height: 350px;
+    }
+    .shot-container:before {
+    content: '「 Life is a journey. Nice to Meet U 」';
+    position: absolute;
+    top: 50%;
+    color: #FFF;
+    font-size: 1em ;
+    text-align: center;
+    }
+    .read-next-p{
+        display: none ;
+    }
+    .post-header {
+    margin-bottom: 30px ;
+    margin-top: 80px ;
+    }
+
+
+
+    .post-content {
+    min-height: 390px;
+    width: 92%;
+    margin: 0 auto;
+    }
+
+    .shot-container:after, .shot-container:before {
+    display: block;
+    width: 100% ;
+    height: 100% ;
+    opacity: 0;
+    }
+    transform:translate(-50%,-50%) scale(.55)}
+    @keyframes
+    dash{to{stroke-dashoffset:0}}
+    .shot-container:after {
+    content: '';
+    background-color: rgba(0,0,0,.55);
+    }
+
+
+
+    .info-icon i, .shot-container {
+    transition: all .5s ease-in-out;
+    }
+
+    .info-icon i, .shot-container {
+    transition: all .5s ease-in-out;
+    }
+
+    .blog-logo {
+        padding: 5px;
+    }
+    .blog-logo img {
+        height: 30px;
+    }
+    .menu-button {
+        padding: 0 5px;
+        border-radius: 0;
+        border-width: 0;
+        color: #2e2e2e;
+        background: transparent;
+    }
+    .menu-button:hover {
+        color: #2e2e2e;
+        border-color: transparent;
+        background: none;
+    }
+    body.nav-opened .menu-button {
+        background: none;
+        border: transparent;
+    }
+    .main-nav.overlay a:hover {
+        color: #fff;
+        border-color: transparent;
+        background: transparent;
+    }
+    .no-cover .main-nav.overlay {
+        background: none;
+    }
+    .no-cover .main-nav.overlay .menu-button {
+        border: none;
+    }
+    .main-nav.overlay .menu-button {
+        border-color: transparent;
+    }
+    .nav-title {
+        top: 25px;
+    }
+    .nav-close {
+        position: absolute;
+        top: 18px;
+    }
+    .nav ul {
+        padding: 60px 9% 5%;
+    }
+    .inner, .pagination {
+        width: auto;
+        margin: 2rem auto;
+    }
+    .post {
+        width: auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        padding-bottom: 2rem;
+        line-height: 1.65em;
+    }
+
+    .post-template .post-header {
+        margin-bottom: 2rem;
+        width: 100%;
+        height: 25%;
+        text-align: center;
+        margin-bottom: 60px;
+
+    }
+    .post-template .post-date {
+        display: inline-block;
+    }
+    hr {
+        margin: 1.75em 0;
+    }
+    p, ul, ol, dl {
+        font-size: 0.95em;
+        margin: 0 0 2.5rem 0;
+    }
+    .page-title {
+        font-size: 3rem;
+    }
+    .post-excerpt p {
+        font-size: 0.85em;
+    }
+    .page-description {
+        font-size: 1.6rem;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0 0 0.3em 0;
+    }
+    h1 {
+        font-size: 2.8rem;
+        letter-spacing: -1px;
+    }
+    h2 {
+        font-size: 2.4rem;
+        letter-spacing: 0;
+    }
+    h3 {
+        font-size: 2.1rem;
+    }
+    h4 {
+        font-size: 1.9rem;
+    }
+    h5 {
+        font-size: 1.8rem;
+    }
+    h6 {
+        font-size: 1.8rem;
+    }
+
+    .post-template .site-footer {
+        margin-top: 0;
+    }
+    .post-content img {
+        padding: 0;
+        width: calc(100%+ 32px);
+        /* expand with to image + margins */
+        min-width: 0;
+        max-width: 112%;
+        /* fallback when calc doesn't work */
+    }
+
+    .post-footer {
+        padding: 5rem 0 3rem 0;
+        text-align: center;
+    }
+    .post-footer .author {
+        margin: 0 0 2rem 0;
+        padding: 0 0 1.6rem 0;
+        border-bottom: #EBF2F6 1px dashed;
+    }
+    .post-footer .share {
+        position: static;
+        width: auto;
+    }
+    .post-footer .share a {
+        margin: 1.4rem 0.8rem 0 0.8rem;
+    }
+    .author-meta li {
+        float: none;
+        margin: 0;
+        line-height: 1.75em;
+    }
+    .author-meta li:before {
+        display: none;
+    }
+    .older-posts, .newer-posts {
+        position: static;
+        margin: 10px 0;
+    }
+    .page-number {
+        display: block;
+    }
+    .site-footer {
+        margin-top: 3rem;
+    }
+    .author-profile {
+        padding-bottom: 2rem;
+    }
+    .post-head.main-header {
+        height: 30vh;
+    }
+    .tag-head.main-header, .author-head.main-header {
+        height: 20vh;
+    }
+    .post-footer .author-image {
+        top: -60px;
+    }
+    .author-profile .author-image {
+        margin-top: -70px;
+    }
+    .author-profile .author-meta span {
+        font-size: 1.4rem;
+    }
+    .archive-template .main-header .page-description {
+        display: none;
+    }
+    .gh-subscribe {
+        padding: 15px;
+    }
+    .gh-subscribe form {
+        margin-top: 10px;
+    }
+    .read-next {
+        margin-top: 2rem;
+        margin-bottom: -37px;
+    }
+    .read-next .post {
+        width: 100%;
+    }
+}
+
+/* ==========================================================================
+   14. Animations
+   ========================================================================== */
+
+
+/* Used to fade in title/desc on the home page */
+
+@-webkit-keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/* Used to bounce .scroll-down on home page */
+
+@-webkit-keyframes bounce {
+    0%, 10%, 25%, 40%, 50% {
+        -webkit-transform: translateY(0) rotate(-90deg);
+        transform: translateY(0) rotate(-90deg);
+    }
+    20% {
+        -webkit-transform: translateY(-10px) rotate(-90deg);
+        transform: translateY(-10px) rotate(-90deg);
+    }
+    30% {
+        -webkit-transform: translateY(-5px) rotate(-90deg);
+        transform: translateY(-5px) rotate(-90deg);
+    }
+}
+@keyframes bounce {
+    0%, 10%, 25%, 40%, 50% {
+        -webkit-transform: translateY(0) rotate(-90deg);
+        transform: translateY(0) rotate(-90deg);
+    }
+    20% {
+        -webkit-transform: translateY(-10px) rotate(-90deg);
+        transform: translateY(-10px) rotate(-90deg);
+    }
+    30% {
+        -webkit-transform: translateY(-5px) rotate(-90deg);
+        transform: translateY(-5px) rotate(-90deg);
+    }
+}
+
+
 
 
 /* ==========================================================================
