@@ -1886,6 +1886,14 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
+
+    iframe{
+        position: fixed;
+        right: 15%;
+        bottom: 10px;
+        width: 70%;
+        margin: 0 auto;
+    }
     .main-header {
         margin-bottom: 15px;
         height: 40vh;
