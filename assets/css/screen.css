@@ -21,7 +21,7 @@
     13. Media Queries (Mobile)
     14. Animations
     15. nice_shot
-
+    16. tag-code tag-fragment
 */
 
 
@@ -1889,6 +1889,7 @@ body:not(.post-template) .post-title {
     .main-header {
         margin-bottom: 15px;
         height: 40vh;
+        display: none;
     }
     .no-cover.main-header {
         height: 30vh;
@@ -1902,6 +1903,76 @@ body:not(.post-template) .post-title {
         padding: 5px;
         margin-bottom: 2rem;
     }
+    .site-wrapper{
+        width: 100% !important;
+        height: 100% !important;
+        background-color: #FFF;
+    }
+    #content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: #FFF;
+    }
+
+    .shot-container {
+    position: relative;
+    width: 100%;
+    height: 70% !important;
+    padding-bottom: 0 !important;
+    background: center no-repeat fixed #FFF;
+    background-size: cover;
+    }
+    .shot-svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%) scale(.9);
+    transform: translate(-50%,-50%) scale(.9);
+    width: 350px;
+    height: 350px;
+    }
+    .shot-container:before {
+    content: '「 Life is a journey. Nice to Meet U 」';
+    position: absolute;
+    top: 50%;
+    color: #FFF;
+    font-size: 1em !important;
+    text-align: center;
+    }
+
+    .shot-container:after, .shot-container:before {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0;
+    }
+    transform:translate(-50%,-50%) scale(.55)}
+    @keyframes
+    dash{to{stroke-dashoffset:0}}
+    .shot-container:after {
+    content: '';
+    background-color: rgba(0,0,0,.55);
+    }
+
+    .ui.grid>.column:not(.row) {
+    width: 100% !important;
+    margin: 0 auto;
+    }
+
+    .info-icon i, .shot-container {
+    transition: all .5s ease-in-out;
+    }
+
+    .info-icon i, .shot-container {
+    transition: all .5s ease-in-out;
+    }
+
     .blog-logo {
         padding: 5px;
     }
@@ -2429,6 +2500,21 @@ body:not(.post-template) .post-title {
     color: #6bafe7
 }
 
+.shot-svg path {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    -webkit-animation: dash 6s linear forwards;
+    animation: dash 6s linear forwards;
+}
+.shot-svg circle, .shot-svg path {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+}
+
+.shot-svg circle {
+    -webkit-animation: dash 2s linear forwards;
+    animation: dash 2s linear forwards;
+}
 
 
 .post_container{
@@ -2624,6 +2710,8 @@ aside.read-next-p a{
     padding-top: 50px;
     color:  #6bafe7;
 }
+
+
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
