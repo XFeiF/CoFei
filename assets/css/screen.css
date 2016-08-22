@@ -1151,7 +1151,7 @@ body:not(.post-template) .post-title {
 
 .post-content img {
     display: block;
-    max-width: 126%;
+    max-width: 100%;
     height: auto;
     padding: 0.6em 0;
     /* Centers an image by (1) pushing its left edge to the
@@ -2170,11 +2170,11 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .shot-container:before {
-    content: '「 你好哇」';
+    content: '「 Life is a journey. Nice to Meet U 」';
     position: absolute;
     top: 50%;
     color: #fff;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
 }
 .shot-container:before {
@@ -2211,7 +2211,7 @@ body:not(.post-template) .post-title {
     background-size: cover;
 }
 .shot-container.switch {
-    background-image: url(//7xic0o.com1.z0.glb.clouddn.com/zc.jpg);
+    background-image: url(//ww2.sinaimg.cn/mw690/005O8ntygw1f72i1wu6szj311y0jl7e1.jpg);
 }
 .shot-svg.switch {
     opacity: 0;
@@ -2253,7 +2253,7 @@ body:not(.post-template) .post-title {
     z-index: 9;
 }
 .info-avatar:hover {
-    box-shadow: 0 0 0 3px #000, 0 0 0 6px #CE2323;
+    box-shadow: 0 0 0 3px #000, 0 0 0 6px #6bafe7;
 }
 .info-avatar, .info-content, .info-link {
     position: absolute;
@@ -2269,7 +2269,7 @@ body:not(.post-template) .post-title {
     -webkit-transform: translate(-50%, -50%);
 }
 .info-content a:link, .info-content a:visited {
-    color: #CE2323;
+    color: #6bafe7;
 }
 .info-content a:active, .info-content a:hover, .info-content a:link, .info-content a:visited {
     text-decoration: none;
@@ -2287,7 +2287,7 @@ body:not(.post-template) .post-title {
 .info-icon i:hover {
     border-radius: 6px;
     color: rgba(255, 255, 255, .9);
-    background-color: #CE2323;
+    background-color: #6bafe7;
 }
 .info-icon i {
     text-align: center;
@@ -2330,7 +2330,7 @@ body:not(.post-template) .post-title {
     color: #CCC;
     transition: all .3s linear
 }
-#returnTop, .back-btn {
+#returnTop, .back-btn, .code-back-btn,.frag-back-btn{
     width: 21px;
     height: 18px;
     background-position: center;
@@ -2350,10 +2350,10 @@ body:not(.post-template) .post-title {
 }
 
 #returnTop:hover {
-    border: 1px solid #CE2323
+    border: 1px solid #6bafe7
 }
 #returnTop:hover i {
-    color: #CE2323
+    color: #6bafe7
 }
 .back-btn, .back-btn i {
     color: #CCC;
@@ -2366,12 +2366,70 @@ body:not(.post-template) .post-title {
     border-radius: 4px;
     border: 1px solid #CCC
 }
+
+
+
 .back-btn:hover {
-    border: 1px solid #CE2323
+    border: 1px solid #6bafe7
 }
 .back-btn:hover i {
-    color: #CE2323
+    color: #6bafe7
 }
+
+.code-back-btn i.code.icon {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    font-size: 1.1em;
+}
+
+.code-back-btn, .code-back-btn i{
+    color: #CCC;
+    transition: all .3s linear
+}
+.code-back-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    border-radius: 4px;
+    border: 1px solid #CCC
+}
+.code-back-btn:hover {
+    border: 1px solid #6bafe7
+}
+.code-back-btn:hover i {
+    color: #6bafe7
+}
+
+
+/*==========puzzle-back-btn========*/
+
+.frag-back-btn i.puzzle.icon {
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    font-size: 1.1em;
+}
+
+.frag-back-btn, .frag-back-btn i{
+    color: #CCC;
+    transition: all .3s linear
+}
+.frag-back-btn {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    border-radius: 4px;
+    border: 1px solid #CCC
+}
+.frag-back-btn:hover {
+    border: 1px solid #6bafe7
+}
+.frag-back-btn:hover i {
+    color: #6bafe7
+}
+
+
 
 .post_container{
     list-style: none;
@@ -2470,14 +2528,102 @@ a.post_container{
     margin-bottom: 60px;
     margin-top: 100px;
 }
-
+.post-header-c{
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
 .post-header h1.post-title {
     line-height: 1.6;
     font-size: 60px;
     font-family: 'Open Sans','Lantinghei SC','Microsoft YaHei',sans-serif;
-    font-weight: 520;
+    font-weight: 500;
 }
 
+
+#post-card-p{
+    position: relative;
+    width: 40%;
+    max-width: 710px;
+    margin: 2rem auto;
+    padding-bottom: 4rem;
+    word-wrap: break-word;
+    display: block;
+}
+#post-card-p{
+    float: left;
+
+    padding: 20px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.25);
+    transition: all .3s linear;
+    color: #333;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+}
+
+#post-card-p:hover {
+    box-shadow: 0 0 18px 0 rgba(0,0,0,.5);
+}
+.read-next-p {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+    margin:0 auto;
+    margin-top: 10rem;
+}
+aside.read-next-p a{
+    text-decoration: none;
+}
+
+#post-p-p{
+    display: inline-block;
+    float:left;
+    margin-left: 8px;
+    padding-left: 12px;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    border-left: #d5dbde 2px solid;
+
+}
+
+.post-p{
+    position: relative;
+    width: 90%;
+    max-width: 780px;
+    margin: 1rem auto;
+    word-wrap: break-word;
+
+}
+
+.post-p h4{
+    color: #6bafe7;
+}
+
+#frag{
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Open Sans','Lantinghei SC','Microsoft YaHei',sans-serif;
+    font-weight: 400;
+    padding-top: 50px;
+    color:  #6bafe7;
+}
+#code{
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Open Sans','Lantinghei SC','Microsoft YaHei',sans-serif;
+    font-weight: 400;
+    padding-top: 50px;
+    color:  #6bafe7;
+}
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.

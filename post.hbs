@@ -11,6 +11,14 @@
             <a class="back-btn" href="/#content">
               <i class="camera retro icon"></i>
             </a>
+
+            <a class="code-back-btn" href="/tag/code/">
+              <i class="code icon"></i>
+            </a>
+
+            <a class="frag-back-btn" href="/tag/fragment/">
+              <i class="puzzle icon"></i>
+            </a>
 </header>
 
 <main class="content" role="main" >
@@ -34,21 +42,29 @@
     <i class="rocket icon"></i>
 </a>
 {{!-- Links to Previous/Next posts --}}
-<aside class="read-next">
+<aside class="read-next-p">
+
     {{#next_post}}
-    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
+    <a id="post-card-p" href="{{url}}">
+        <span><-最近 </span>
+        <section class="post-p">
+            <h4>{{title}}</h4>
         </section>
+        <p id="post-p-p">{{excerpt characters="12"}} </p>
     </a>
     {{/next_post}}
+
+
     {{#prev_post}}
-    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
+    <a class="prev " id="post-card-p" href="{{url}}">
+        <span>更远-> </span>
+        <section class="post-p">
+            <h4>{{title}}</h4>
         </section>
+            <p id="post-p-p">{{excerpt characters="12"}} </p>
     </a>
     {{/prev_post}}
+
 </aside>
 </div>
 {{/post}}
