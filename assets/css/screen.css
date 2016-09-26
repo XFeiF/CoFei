@@ -1179,7 +1179,7 @@ ontent img {
     color: #333;
 }
 
-.post-content p{
+.post-content *{
     font-family: Exo,'-apple-system','Open Sans',HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue','Hiragino Sans GB','Microsoft YaHei',Helvetica,Arial,sans-serif;
 }
 .footnotes {
@@ -2168,6 +2168,7 @@ a.post_container{
 .post-header h1.post-title {
     line-height: 1.6;
     font-size: 60px;
+    color: rgb(49, 118, 148);
     font-family: 'Open Sans','Lantinghei SC',"Oswald",sans-serif;
     font-weight: 500;
 }
@@ -2274,6 +2275,22 @@ aside.read-next-p a{
         height: 60vh;
         padding: 15% 0;
     }
+
+    .post {
+        position: relative;
+        width: 82%;
+        max-width: 82%;
+        margin: 2rem auto;
+        padding-bottom: 4rem;
+        word-wrap: break-word;
+    }
+
+    .post-content{
+        min-height: 400px;
+        padding: 20px 22px;
+        box-shadow: none;
+    }
+
     .scroll-down, .home-template .main-header:after {
         display: none;
     }
@@ -2417,6 +2434,20 @@ aside.read-next-p a{
         bottom: 10px;
         width: 70%;
         margin: 0 auto;
+    }
+    .post {
+        position: relative;
+        width: 82%;
+        max-width: 82%;
+        margin: 2rem auto;
+        padding-bottom: 4rem;
+        word-wrap: break-word;
+    }
+
+    .post-content{
+        min-height: 400px;
+        padding: 20px 22px;
+        box-shadow: none;
     }
 
     .post-meta {
@@ -2631,12 +2662,10 @@ aside.read-next-p a{
         margin-top: 0;
     }
     .post-content img {
-        padding: 0;
-        width: calc(100%+ 32px);
-        /* expand with to image + margins */
-        min-width: 0;
-        max-width: 112%;
-        /* fallback when calc doesn't work */
+        padding:0;
+        width: 80%;
+        margin-left: 10%;
+        box-shadow: 0 0 25px 0 rgba(0,0,0,.5);
     }
 
     .post-footer {
